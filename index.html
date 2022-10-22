@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social Media Dashboard With Theme Switcher Master</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+  <style>
+    
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <div class="flex">
+          <div>
+            <h1 class="lightText">
+              Social Media Dashboard
+            </h1>
+            <span>
+              Total Followers: 23,004
+            </span>
+          </div>
+          <div class="toggle-container">
+            Dark Mode
+            <input type="checkbox" name="checkbox" id="toggle" unchecked>
+            <label for="toggle">
+              <div class="ball"></div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div class="container">
+        <div class="flex">
+          <div class="card facebook">
+            <div class="flex align-center">
+              <img src="./images/icon-facebook.svg" alt="facebook">
+              <p>@nathanf</p>
+            </div>
+            <div class="followers">
+              <h1 class="lightText">1987</h1>
+              <span>followers</span>
+            </div>
+            <div class="arrow-up-text">
+              <div>
+                <img src="./images/icon-up.svg" alt="icon-up"> 
+              </div>
+              <div>
+                <p>12 Today</p>
+              </div>
+            </div>
+          </div>
+          <div class="card twitter">
+            <div class="flex align-center">
+              <img src="./images/icon-twitter.svg" alt="twitter">
+              <p>@nathanf</p>
+            </div>
+            <div class="followers">
+              <h1 class="lightText">1044</h1>
+              <span>Followers</span>
+            </div>
+            <div class="arrow-up-text">
+              <div>
+                <img src="./images/icon-up.svg" alt="icon-up"> 
+              </div>
+              <div>
+                <p>99 Today</p>
+              </div>
+            </div>
+          </div>
+          <div class="card instagram">
+            <div class="flex align-center">
+              <img src="./images/icon-instagram.svg" alt="instagram">
+              <p>@realnathanf</p>
+            </div>
+            <div class="followers">
+              <h1 class="lightText">11k</h1>
+              <span>Followers</span>
+            </div>
+            <div class="arrow-up-text">
+              <div>
+                <img src="./images/icon-up.svg" alt="icon-up"> 
+              </div>
+              <div>
+                <p>1099 Today</p>
+              </div>
+            </div>
+          </div>
+          <div class="card youtube">
+            <div class="flex align-center">
+              <img src="./images/icon-youtube.svg" alt="youtube">
+              <p>Nathan F.</p>
+            </div>
+            <div class="followers">
+              <h1 class="lightText">8239</h1>
+              <span>Subscribers</span>
+            </div>
+            <div class="arrow-up-text">
+              <div>
+                <img src="./images/icon-down.svg" alt="icon-down"> 
+              </div>
+              <div>
+                <p class="red-text">144 Today</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+    <section class="overview light-bg">
+      <div class="container">
+        <h1 class="header-overview lightText">Overview - Today</h1>
+        <div class="flex">
+          <div class="card">
+            <div class="cardinfo my-1">
+              <p>Page Views</p>
+              <img src="./images/icon-facebook.svg" alt="facebook">
+            </div>
+            <div class="cardinfo ">
+              <div>
+                <h1 class="lightText">87</h1>
+              </div>
+              <div class="arrow-up-text">
+                <div>
+                  <img src="./images/icon-up.svg" alt="icon">
+                </div>
+                <div class="green-text"!important>
+                  <p green-text>3%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardinfo my-1">
+              <p>Likes</p>
+              <img src="./images/icon-facebook.svg" alt="facebook">
+            </div>
+            <div class="cardinfo ">
+              <div>
+                <h1 class="lightText">52</h1>
+              </div>
+              <div class="arrow-up-text">
+                <div>
+                  <img src="./images/icon-down.svg" alt="icon">
+                </div>
+                <div>
+                  <p class="red-text">2%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardinfo my-1">
+              <p>Likes</p>
+              <img src="./images/icon-instagram.svg" alt="instagram">
+            </div>
+            <div class="cardinfo ">
+              <div>
+                <h1 class="lightText">5462</h1>
+              </div>
+              <div class="arrow-up-text">
+                <div>
+                  <img src="./images/icon-up.svg" alt="icon">
+                </div>
+                <div class="green-text">
+                  <p>2257%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardinfo my-1">
+              <p>Page Views</p>
+              <img src="./images/icon-instagram.svg" alt="instagram">
+            </div>
+            <div class="cardinfo ">
+              <div>
+                <h1 class="lightText">52k</h1>
+              </div>
+              <div class="arrow-up-text">
+                <div>
+                  <img src="./images/icon-up.svg" alt="icon">
+                </div>
+                <div class="green-text">
+                  <p>1375%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="overview light-bg">
+      <div class="container">
+        <div class="flex">
+          <div class="card">
+            <div class="cardinfo my-1">
+              <p>Retweets</p>
+              <img src="./images/icon-twitter.svg" alt="twitter">
+            </div>
+            <div class="cardinfo ">
+              <div>
+                <h1 class="lightText">117</h1>
+              </div>
+              <div class="arrow-up-text">
+                <div>
+                  <img src="./images/icon-up.svg" alt="icon">
+                </div>
+                <div class="green-text">
+                  <p>303%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardinfo my-1">
+              <p>Likes</p>
+              <img src="./images/icon-twitter.svg" alt="twitter">
+            </div>
+            <div class="cardinfo ">
+              <div>
+                <h1 class="lightText">117</h1>
+              </div>
+              <div class="arrow-up-text">
+                <div>
+                  <img src="./images/icon-up.svg" alt="icon">
+                </div>
+                <div>
+                  <p class="green-text">553%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardinfo my-1">
+              <p>Likes</p>
+              <img src="./images/icon-youtube.svg" alt="youtube">
+            </div>
+            <div class="cardinfo ">
+              <div>
+                <h1 class="lightText">107</h1>
+              </div>
+              <div class="arrow-up-text">
+                <div>
+                  <img src="./images/icon-down.svg" alt="icon">
+                </div>
+                <div>
+                  <p class="red-text">19%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="cardinfo my-1">
+              <p>Total Views</p>
+              <img src="./images/icon-youtube.svg" alt="youtube">
+            </div>
+            <div class="cardinfo ">
+              <div>
+                <h1 class="lightText">1407</h1>
+              </div>
+              <div class="arrow-up-text">
+                <div>
+                  <img src="./images/icon-down.svg" alt="icon">
+                </div>
+                <div>
+                  <p class="red-text">12%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <div class="attribution light-bg">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/popmihaiadrianwebdevelopment">Pop Mihai Adrian</a>.
+  </div>
+</body>
+</html>

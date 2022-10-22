@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+:root {
+    /* DARK THEME */
+    --background: hsl(230, 17%, 14%);
+    --top-bg-pattern: hsl(232, 19%, 15%);
+    --card-bg: hsl(228, 28%, 20%);
+    --blue-text: hsl(228, 34%, 66%);
+    --white-text: hsl(0, 0%, 100%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: var(--background);
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    width: 1400px;
+    padding-top: 3rem;
+}
+
+.flex {
+    display: flex;
+    /* align-items: center; */
+}
+
+header {
+    background-color: var(--top-bg-pattern);
+}
+
+nav .flex {
+    justify-content: space-between;
+}
+nav h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: var(--white-text);
+    letter-spacing: 1px;
+    font-size: 2rem;
+    margin-bottom: .4rem;
+}
+
+nav span {
+    color: var(--blue-text);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+form {
+    color: var(--blue-text);
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+section .container .card .flex {
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    background-color: var(--card-bg);
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    padding: 40px 80px;
+    margin-right:2rem;
+    width: 350px;
+}
+
+.align-center {
+    margin-bottom: 1rem;
+}
+
+.card img {
+    margin-right: .5rem;
+}
+
+.card p {
+    color: var(--blue-text);
+    font-family: inherit;
+    font-weight: 700;
+}
+
+.card h1 {
+    color: var(--white-text);
+    font-size:3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+.card:last-child{
+    margin-right:0;
+}
+
+.card .arrow-up-text .red-text{
+    color: hsl(356, 69%, 56%);
+}
+
+.facebook {
+    border-top:4px solid hsl(208, 92%, 53%);
+}
+
+.twitter {
+    border-top:4px solid hsl(203, 89%, 53%);
+}
+
+.youtube {
+    border-top:4px solid hsl(348, 97%, 39%);
+}
+
+.instagram {
+    border-top:4px solid ;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-image-source: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
+.followers span {
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    color:var(--blue-text);
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: .8;
+}
+
+.followers {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.arrow-up-text {
+    color: hsl(163, 72%, 41%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-up-text p, .green-text {
+    color:hsl(163, 72%, 41%);
+}
+
+section .flex {
+    align-items: center;
+    justify-content: center;
+}
+
+section .header-overview {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: var(--white-text);
+    letter-spacing: 1px;
+    font-size: 2rem;
+    margin-bottom: .4rem;
+}
+
+.overview .card {
+    padding: 40px 40px;
+}
+
+.cardinfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-1 {
+    margin-bottom: 1rem;
+}
+
+.toggle-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    color: var(--blue-text);
+}
+
+.toggle-container label {
+	background-image: linear-gradient(
+		to right,
+		hsl(210, 78%, 56%),
+		hsl(146, 68%, 55%)
+	);
+	border-radius: 50px;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 10px;
+	position: relative;
+	height: 30px;
+	width: 60px;
+}
+
+.toggle-container label .ball {
+	background-color: var(--background);
+	border-radius: 50%;
+	position: absolute;
+	top: 2.5px;
+	left: 2.5px;
+	height: 25px;
+	width: 25px;
+	transition: transform 0.4s ease;
+}
+
+.toggle-container input {
+	position: absolute;
+	left: -9999px;
+}
+
+.toggle-container input:checked + label .ball {
+	transform: translateX(30px);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (max-width: 900px) {
+    nav {
+        padding: 2rem;
+        padding-top: 0;
+    }
+    nav .light-h1 {
+        font-size: 2rem;
+        text-align: left;
+    }
+    nav .flex {
+        align-items: left;
+        justify-content: left;
+    }
+    .container {
+        max-width: 100%;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .card {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+    
+    .toggle-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--blue-text);
+    }
+    .header-overview {
+        padding: 2rem;
+        padding-top: 0;
+    }
+}
